@@ -16,13 +16,11 @@ Consulter [`docs/SOURCE_RESEARCH.md`](docs/SOURCE_RESEARCH.md) pour les pistes e
 
 ## État du projet
 
-Le dépôt est initialisé. Aucun provider n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
+Le dépôt est initialisé. Aucun provider de lecture n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
 
-Sources envisagées :
-- Anime-Sama
-- VoirAnime
+Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. Leur présence dans la documentation ne signifie pas qu'elles sont compatibles ou autorisées comme providers. Taizen est un catalogue de métadonnées, pas un service de lecture. AnimeDoc expose une API de lecture, mais son mécanisme de clé privée doit être résolu avant toute distribution publique.
 
-Ces noms constituent une liste de pistes, pas une affirmation de compatibilité. Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès.
+Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès.
 
 ## Langues
 
@@ -30,7 +28,7 @@ Les providers devront déclarer leur langue dans le manifeste et, lorsque le sit
 - **VF** : audio français ;
 - **VOSTFR** : audio original avec sous-titres français.
 
-La disponibilité réelle dépendra de chaque titre et de la source.
+La disponibilité réelle dépendra de chaque titre et de la source. Un compteur de doublage ou de sous-titrage ne prouve pas, à lui seul, qu'un flux est accessible.
 
 ## Manifeste
 
