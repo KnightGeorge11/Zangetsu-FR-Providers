@@ -1,6 +1,6 @@
 # Zangetsu — Sources francophones
 
-Dépôt communautaire de sources pour [Zangetsu](https://github.com/Spyou/Zangetsu), avec pour objectif de faciliter la découverte d'animes disposant de pistes **françaises (VF)** et/ou de sous-titres **français (VOSTFR)**.
+Dépôt communautaire de sources pour [Zangetsu](https://github.com/Spyou/Zangetsu), avec pour objectif de faciliter la découverte d'animes **récents** disposant de pistes **françaises (VF)** et/ou de sous-titres **français (VOSTFR)**, y compris les nouveautés de saison et les épisodes récemment publiés.
 
 ## Ajouter ce dépôt dans Zangetsu
 
@@ -20,7 +20,7 @@ Le dépôt est initialisé. Aucun provider de lecture n'est publié pour le mome
 
 Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. Leur présence dans la documentation ne signifie pas qu'elles sont compatibles ou autorisées comme providers. Taizen est un catalogue de métadonnées, pas un service de lecture. AnimeDoc expose une API de lecture, mais son mécanisme de clé privée doit être résolu avant toute distribution publique.
 
-Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès.
+Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès. La fraîcheur du catalogue sera également testée : nouveautés de saison, épisodes récents et délai de mise à jour.
 
 ## Langues
 
