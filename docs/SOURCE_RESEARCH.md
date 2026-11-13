@@ -15,6 +15,7 @@ Ce document distingue les catalogues de métadonnées, les annuaires de disponib
 | ADN (Animation Digital Network) | Service officiel de streaming d'anime | À examiner uniquement via une API ou un partenariat explicitement autorisé. Aucune API publique de lecture autorisée n'a été confirmée dans cette recherche. |
 | Anime-Sama | Site évoqué comme piste par le projet | Non validé. Propriété des contenus, autorisation d'accès automatisé et conditions d'intégration restent à établir. |
 | VoirAnime | Site évoqué comme piste par le projet | Non validé. Propriété des contenus, autorisation d'accès automatisé et conditions d'intégration restent à établir. |
+| FRAnime | Annuaire de liens vidéo tiers. Sa page DMCA indique que le site n'héberge pas les vidéos et indexe des liens vers des hébergeurs publics. | **Non validé pour un provider de lecture.** Aucun droit de distribution des œuvres ni autorisation d'intégration automatisée n'a été confirmé. Ne pas extraire ni redistribuer les liens vidéo tant que ces autorisations ne sont pas établies. Le site peut seulement être conservé comme piste de recherche, sans annoncer une compatibilité Zangetsu. |
 
 ## Capacités de téléchargement de Zangetsu
 
@@ -34,6 +35,7 @@ Références :
 - Documentation API AnimeDoc : https://www.animedoc.cloud/docs
 - Conditions AnimeDoc : https://www.animedoc.cloud/terms
 - Conditions officielles Crunchyroll : https://www.crunchyroll.com/en/terms/privacy
+- DMCA FRAnime : https://franime.fr/dmca
 - Politique IA du projet Zangetsu : https://github.com/Spyou/Zangetsu/blob/main/AI_POLICY.md
 - Contrat et format des dépôts de providers : https://github.com/Spyou/zangetsu-providers
 
@@ -53,5 +55,7 @@ Références :
 Aucun provider de lecture VF/VOSTFR n'est validé ou publié dans ce dépôt. Le manifeste reste vide volontairement.
 
 Taizen peut être utile comme source de métadonnées et de liens vers des services officiels, mais ne fournit pas de lecture vidéo. AnimeDoc est retenu pour le catalogue : sa documentation décrit un flux d'accueil avec une rangée « Latest anime », des tendances, un endpoint de navigation triable par nouveautés (« Latest »), une recherche et des fiches détaillées. Cette intégration catalogue ne dépend pas de l'activation du streaming. Il faudra toutefois tester la fraîcheur réelle des résultats, la couverture VF/VOSTFR et les saisons/épisodes. La clé API constitue un blocage de publication à résoudre : les conditions exigent qu'elle reste sur le serveur de son titulaire et le plan gratuit est limité aux projets personnels/prototypes. Une autorisation écrite et une solution d'accès conforme sont nécessaires avant d'intégrer cette API dans un provider distribué à tous les utilisateurs.
+
+FRAnime propose effectivement des entrées marquées VF et VOSTFR, mais sa propre page DMCA précise qu'il indexe des liens hébergés par des tiers et ne stocke pas les vidéos. La présence de ces liens ne prouve pas que les droits de diffusion ou une autorisation de réutilisation aient été accordés. En l'absence de confirmation, aucun scraper de lecture FRAnime ne sera publié.
 
 Une API de métadonnées comme AniList ou Taizen ne remplace pas une source vidéo. Cette distinction évite de publier un provider qui affiche des titres sans pouvoir lire ni télécharger leurs épisodes.
