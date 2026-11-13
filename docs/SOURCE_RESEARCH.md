@@ -17,6 +17,17 @@ Ce document distingue les catalogues de métadonnées, les annuaires de disponib
 | VoirAnime | Site évoqué comme piste par le projet | Non validé. Propriété des contenus, autorisation d'accès automatisé et conditions d'intégration restent à établir. |
 | FRAnime | Annuaire de liens vidéo tiers. Sa page DMCA indique que le site n'héberge pas les vidéos et indexe des liens vers des hébergeurs publics. | **Non validé pour un provider de lecture.** Aucun droit de distribution des œuvres ni autorisation d'intégration automatisée n'a été confirmé. Ne pas extraire ni redistribuer les liens vidéo tant que ces autorisations ne sont pas établies. Le site peut seulement être conservé comme piste de recherche, sans annoncer une compatibilité Zangetsu. |
 
+## Écosystèmes d'extensions déjà intégrés à Zangetsu
+
+Le code actuel de Zangetsu comporte des intégrations distinctes pour Aniyomi et Mangayomi. Elles doivent être étudiées avant de développer un provider natif dans ce dépôt.
+
+- **Aniyomi** : un adaptateur Zangetsu expose les fonctions de recherche, fiches, épisodes et sources vidéo des extensions anime. Le chargement des extensions Aniyomi est limité à Android dans le code consulté. Un dépôt communautaire consulté annonce notamment FrenchAnime, VoirAnime et Vostfree comme sources françaises ; ces noms sont des pistes à tester, pas une preuve de fonctionnement ou d'autorisation.
+- **Mangayomi** : Zangetsu contient un gestionnaire de dépôts et un moteur d'extensions. Son adaptateur anime récupère les fiches, épisodes, vidéos, en-têtes et sous-titres fournis par les extensions. Les dépôts Mangayomi examinés proposent des extensions Sub+Dub, mais les listes consultées ne prouvent pas une couverture VF/VOSTFR en français.
+
+Les manifestes de ces deux écosystèmes ne sont pas compatibles avec le manifeste natif de ce dépôt et ne doivent pas être ajoutés directement à `index.json`.
+
+Voir `docs/EXTENSION_COMPATIBILITY.md` pour les dépôts, les liens, les limites et le plan de validation.
+
 ## Capacités de téléchargement de Zangetsu
 
 La documentation publique de Zangetsu indique que l'application possède déjà un système de téléchargement d'épisodes : l'utilisateur peut télécharger un épisode depuis sa fiche, ou lancer un téléchargement groupé depuis la liste des épisodes. Les flux segmentés pris en charge sont assemblés en un fichier vidéo lisible hors connexion. La documentation des versions récentes indique également que les sous-titres téléchargés peuvent être transmis aux lecteurs externes.
