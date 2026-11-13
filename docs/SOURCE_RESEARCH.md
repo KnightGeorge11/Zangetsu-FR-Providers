@@ -35,11 +35,12 @@ Ce document distingue les catalogues de métadonnées, les annuaires de disponib
 4. Ne jamais publier une clé API privée dans un dépôt ou un fichier JavaScript distribué aux utilisateurs.
 5. Confirmer les pistes audio françaises et les sous-titres français sur des titres réels. Un simple compteur de langues ne prouve pas la disponibilité d'un flux lisible.
 6. Tester le contrat JavaScript de Zangetsu, la recherche, les fiches, les épisodes et la lecture avant publication.
+7. Vérifier la fraîcheur du catalogue : anime de la saison en cours, dates de sortie, épisodes récemment publiés et délai entre publication sur le site et apparition dans l'API. Un simple tri « latest » ne prouve pas un simulcast ni une mise à jour rapide.
 
 ## État actuel
 
 Aucun provider de lecture VF/VOSTFR n'est validé ou publié dans ce dépôt. Le manifeste reste vide volontairement.
 
-Taizen peut être utile comme source de métadonnées et de liens vers des services officiels, mais ne fournit pas de lecture vidéo. AnimeDoc expose techniquement des fonctions de lecture et déclare utiliser des fournisseurs sous licence. Zangetsu permet aux providers JavaScript de proposer un réglage texte pour que chaque utilisateur saisisse sa propre clé ; il existe donc une voie technique sans publier de secret dans le dépôt. Il reste toutefois nécessaire de confirmer auprès d'AnimeDoc que le plan gratuit et la distribution du provider via un dépôt communautaire sont autorisés, puis de vérifier les langues et la lecture réelle.
+Taizen peut être utile comme source de métadonnées et de liens vers des services officiels, mais ne fournit pas de lecture vidéo. AnimeDoc expose techniquement des fonctions de lecture et déclare utiliser des fournisseurs sous licence. Sa documentation annonce aussi un flux d'accueil, les tendances et un catalogue triable par nouveautés (« latest ») : c'est la piste la plus prometteuse actuellement pour découvrir des anime récents. Il faudra tester si les sorties de la saison en cours et les nouveaux épisodes apparaissent rapidement, et vérifier la disponibilité VF/VOSTFR titre par titre. Zangetsu permet aux providers JavaScript de proposer un réglage texte pour que chaque utilisateur saisisse sa propre clé ; il existe donc une voie technique sans publier de secret dans le dépôt. Il reste toutefois nécessaire de confirmer auprès d'AnimeDoc que le plan gratuit et la distribution du provider via un dépôt communautaire sont autorisés.
 
 Une API de métadonnées comme AniList ou Taizen ne remplace pas une source vidéo. Cette distinction évite de publier un provider qui affiche des titres sans pouvoir lire leurs épisodes.
