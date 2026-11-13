@@ -31,7 +31,7 @@ Ne pas déduire le contrat d'un provider en recopiant aveuglément le code d'une
 - [ ] La disponibilité VOSTFR est confirmée par des sous-titres français réels.
 - [ ] Une langue inconnue ou non vérifiée n'est jamais présentée comme disponible.
 
-## 4. Lecture et stabilité
+## 4. Lecture, téléchargement et stabilité
 
 - [ ] La lecture a été testée sur au moins deux titres autorisés.
 - [ ] Plusieurs épisodes ont été vérifiés lorsque c'est possible.
@@ -39,6 +39,13 @@ Ne pas déduire le contrat d'un provider en recopiant aveuglément le code d'une
 - [ ] Les URL temporaires, expirations et erreurs sont gérées proprement.
 - [ ] Les délais et le nombre de requêtes restent raisonnables.
 - [ ] Les limites d'accès et consignes du site sont respectées.
+- [ ] Un épisode peut être téléchargé depuis l'application mobile Zangetsu.
+- [ ] Le téléchargement fonctionne jusqu'à son terme, y compris pour les flux segmentés lorsque ceux-ci sont pris en charge.
+- [ ] Le fichier téléchargé se lit depuis la bibliothèque hors connexion, sans nouvelle recherche en ligne.
+- [ ] Les sous-titres français sont disponibles après téléchargement lorsque la source et le format les exposent.
+- [ ] Le comportement est testé après fermeture de l'application et en mode avion.
+
+Un lien qui fonctionne en streaming n'est pas automatiquement téléchargeable. Ne pas déclarer le téléchargement validé sans test réel dans Zangetsu.
 
 ## 5. Publication
 
@@ -51,4 +58,4 @@ Ne pas déduire le contrat d'un provider en recopiant aveuglément le code d'une
 
 ## État actuel
 
-Aucun provider n'est validé à ce stade. Les noms de sites éventuellement évoqués dans le README sont des pistes de recherche, pas des intégrations disponibles. Un provider ne sera ajouté qu'après vérification de l'autorisation, de la compatibilité Zangetsu et du fonctionnement réel.
+Aucun provider n'est validé à ce stade. Les noms de sites éventuellement évoqués dans le README sont des pistes de recherche, pas des intégrations disponibles. Un provider ne sera ajouté qu'après vérification de l'autorisation, de la compatibilité Zangetsu, de la lecture et du téléchargement hors connexion.
