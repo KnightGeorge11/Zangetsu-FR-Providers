@@ -10,6 +10,17 @@ Dans l'application : **Settings → Sources → Add repo**, puis coller cette ad
 https://raw.githubusercontent.com/KnightGeorge11/Zangetsu-FR-Providers/main/index.json
 ```
 
+## Objectifs obligatoires
+
+Les providers de ce dépôt devront répondre à ces quatre exigences :
+
+1. **Anime récents** : nouveautés de saison et épisodes récemment publiés, avec une fraîcheur du catalogue vérifiée.
+2. **Français** : distinguer clairement la VF (audio français) de la VOSTFR (audio original avec sous-titres français).
+3. **Lecture fonctionnelle** : les épisodes annoncés doivent réellement pouvoir être lus dans Zangetsu.
+4. **Téléchargement mobile** : les épisodes doivent pouvoir être téléchargés depuis la fonction intégrée de Zangetsu et lus hors connexion. Les sous-titres doivent être conservés lorsqu'ils sont disponibles et pris en charge par le format/source.
+
+Zangetsu possède déjà une bibliothèque de téléchargements hors ligne. Le rôle du provider est de fournir des sources vidéo compatibles avec le mécanisme de téléchargement de l'application, et non de créer un gestionnaire de téléchargement séparé.
+
 ## Recherche des sources
 
 Consulter [`docs/SOURCE_RESEARCH.md`](docs/SOURCE_RESEARCH.md) pour les pistes examinées et leur statut de validation.
@@ -22,21 +33,13 @@ Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. Leu
 
 Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès. La fraîcheur du catalogue sera également testée : nouveautés de saison, épisodes récents et délai de mise à jour.
 
-## Langues
-
-Les providers devront déclarer leur langue dans le manifeste et, lorsque le site expose cette information de façon fiable, distinguer :
-- **VF** : audio français ;
-- **VOSTFR** : audio original avec sous-titres français.
-
-La disponibilité réelle dépendra de chaque titre et de la source. Un compteur de doublage ou de sous-titrage ne prouve pas, à lui seul, qu'un flux est accessible.
-
 ## Manifeste
 
 Le fichier `index.json` à la racine répertorie les providers installables. Chaque provider devra être un fichier JavaScript autonome placé dans `providers/`, conforme à l'API attendue par Zangetsu.
 
 ## Qualité
 
-Avant publication, chaque provider devra être vérifié sur des titres réels : recherche, fiche, liste d'épisodes, langues annoncées et comportement en cas d'indisponibilité. La version du provider devra être synchronisée avec celle du manifeste.
+Avant publication, chaque provider devra être vérifié sur des titres réels : recherche, fiche, liste d'épisodes, langues annoncées, lecture, téléchargement mobile et lecture hors connexion. La version du provider devra être synchronisée avec celle du manifeste.
 
 ## Transparence
 
