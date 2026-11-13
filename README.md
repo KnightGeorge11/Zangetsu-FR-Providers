@@ -29,7 +29,7 @@ Consulter [`docs/SOURCE_RESEARCH.md`](docs/SOURCE_RESEARCH.md) pour les pistes e
 
 Le dépôt est initialisé. Aucun provider de lecture n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
 
-Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. Leur présence dans la documentation ne signifie pas qu'elles sont compatibles ou autorisées comme providers. Taizen est un catalogue de métadonnées, pas un service de lecture. AnimeDoc expose une API de lecture, mais son mécanisme de clé privée doit être résolu avant toute distribution publique.
+Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. AnimeDoc est retenu dans le projet comme **source de catalogue**, même si aucune lecture vidéo n'est intégrée : ses endpoints de catalogue permettent d'explorer les nouveautés, de rechercher des titres et de consulter leurs fiches. Le plan d'intégration est décrit dans [`docs/ANIMEDOC_INTEGRATION.md`](docs/ANIMEDOC_INTEGRATION.md). Taizen reste une source de métadonnées, pas un service de lecture.
 
 Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès. La fraîcheur du catalogue sera également testée : nouveautés de saison, épisodes récents et délai de mise à jour.
 
