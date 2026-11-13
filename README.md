@@ -23,13 +23,17 @@ Zangetsu possède déjà une bibliothèque de téléchargements hors ligne. Le r
 
 ## Recherche des sources
 
-Consulter [`docs/SOURCE_RESEARCH.md`](docs/SOURCE_RESEARCH.md) pour les pistes examinées et leur statut de validation.
+Consulter les documents suivants pour les pistes examinées et leur statut de validation :
+
+- [Recherche générale des sources](docs/SOURCE_RESEARCH.md)
+- [Intégration AnimeDoc](docs/ANIMEDOC_INTEGRATION.md)
+- [Étude FRAnime et de son API](docs/FRANIME_INTEGRATION.md)
 
 ## État du projet
 
 Le dépôt est initialisé. Aucun provider de lecture n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
 
-Les pistes étudiées comprennent Anime-Sama, VoirAnime, Taizen et AnimeDoc. AnimeDoc est retenu dans le projet comme **source de catalogue**, même si aucune lecture vidéo n'est intégrée : ses endpoints de catalogue permettent d'explorer les nouveautés, de rechercher des titres et de consulter leurs fiches. Le plan d'intégration est décrit dans [`docs/ANIMEDOC_INTEGRATION.md`](docs/ANIMEDOC_INTEGRATION.md). Taizen reste une source de métadonnées, pas un service de lecture.
+Les pistes étudiées comprennent Anime-Sama, VoirAnime, FRAnime, Taizen et AnimeDoc. AnimeDoc est retenu dans le projet comme **source de catalogue**, même si aucune lecture vidéo n'est intégrée : ses endpoints de catalogue permettent d'explorer les nouveautés, de rechercher des titres et de consulter leurs fiches. Le plan d'intégration est décrit dans [docs/ANIMEDOC_INTEGRATION.md](docs/ANIMEDOC_INTEGRATION.md). Taizen reste une source de métadonnées, pas un service de lecture. FRAnime reste une piste non validée : son site déclare indexer des liens hébergés par des tiers, et l'utilisation de son API dans un provider Zangetsu doit être confirmée par l'exploitant.
 
 Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont autorisés, sans contournement de DRM, d'authentification, de protections anti-automatisation ou de limites d'accès. La fraîcheur du catalogue sera également testée : nouveautés de saison, épisodes récents et délai de mise à jour.
 
