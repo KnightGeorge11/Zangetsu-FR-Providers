@@ -10,6 +10,10 @@ Dans l'application : **Settings → Sources → Add repo**, puis coller cette ad
 https://raw.githubusercontent.com/KnightGeorge11/Zangetsu-FR-Providers/main/index.json
 ```
 
+## Recherche des sources
+
+Consulter [`docs/SOURCE_RESEARCH.md`](docs/SOURCE_RESEARCH.md) pour les pistes examinées et leur statut de validation.
+
 ## État du projet
 
 Le dépôt est initialisé. Aucun provider n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
