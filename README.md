@@ -21,17 +21,29 @@ Les providers de ce dépôt devront répondre à ces quatre exigences :
 
 Zangetsu possède déjà une bibliothèque de téléchargements hors ligne. Le rôle du provider est de fournir des sources vidéo compatibles avec le mécanisme de téléchargement de l'application, et non de créer un gestionnaire de téléchargement séparé.
 
+## Réutiliser les extensions existantes
+
+Zangetsu intègre déjà les écosystèmes **Aniyomi** et **Mangayomi**. Avant de développer un provider natif, il faut donc vérifier si une extension existante peut être installée directement dans Zangetsu.
+
+- **Aniyomi** : piste prioritaire pour les sources anime francophones ; son intégration Zangetsu est limitée à Android.
+- **Mangayomi** : Zangetsu possède un gestionnaire et un moteur pour ses extensions. Les dépôts examinés jusqu'ici n'ont pas encore démontré une couverture VF/VOSTFR suffisante.
+
+Attention : les manifestes Aniyomi et Mangayomi ne sont pas le même format que le `index.json` natif de ce dépôt. Ne pas les ajouter directement à notre manifeste.
+
+Voir [l'étude de compatibilité Aniyomi et Mangayomi](docs/EXTENSION_COMPATIBILITY.md).
+
 ## Recherche des sources
 
 Consulter les documents suivants pour les pistes examinées et leur statut de validation :
 
 - [Recherche générale des sources](docs/SOURCE_RESEARCH.md)
+- [Compatibilité des extensions Aniyomi et Mangayomi](docs/EXTENSION_COMPATIBILITY.md)
 - [Intégration AnimeDoc](docs/ANIMEDOC_INTEGRATION.md)
 - [Étude FRAnime et de son API](docs/FRANIME_INTEGRATION.md)
 
 ## État du projet
 
-Le dépôt est initialisé. Aucun provider de lecture n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
+Le dépôt est initialisé. Aucun provider natif de lecture n'est publié pour le moment : chaque intégration doit être vérifiée et testée avant d'être annoncée comme fonctionnelle.
 
 Les pistes étudiées comprennent Anime-Sama, VoirAnime, FRAnime, Taizen et AnimeDoc. AnimeDoc est retenu dans le projet comme **source de catalogue**, même si aucune lecture vidéo n'est intégrée : ses endpoints de catalogue permettent d'explorer les nouveautés, de rechercher des titres et de consulter leurs fiches. Le plan d'intégration est décrit dans [docs/ANIMEDOC_INTEGRATION.md](docs/ANIMEDOC_INTEGRATION.md). Taizen reste une source de métadonnées, pas un service de lecture. FRAnime reste une piste non validée : son site déclare indexer des liens hébergés par des tiers, et l'utilisation de son API dans un provider Zangetsu doit être confirmée par l'exploitant.
 
@@ -39,7 +51,7 @@ Un provider ne sera ajouté que si son utilisation et l'accès aux contenus sont
 
 ## Manifeste
 
-Le fichier `index.json` à la racine répertorie les providers installables. Chaque provider devra être un fichier JavaScript autonome placé dans `providers/`, conforme à l'API attendue par Zangetsu.
+Le fichier `index.json` à la racine répertorie les providers natifs installables. Chaque provider devra être un fichier JavaScript autonome placé dans `providers/`, conforme à l'API attendue par Zangetsu.
 
 ## Qualité
 
